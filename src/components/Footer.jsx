@@ -1,4 +1,5 @@
 import logo from '../assets/9391714.png'
+import nav from '../assets/NavElements.js'
 
 export default function Footer() {
     return (
@@ -8,21 +9,14 @@ export default function Footer() {
             <img src={logo} alt="" className="h-6"/>
                 <div>
                     <h3 className="text-md font-semibold mb-4">
-                        Discover Our Club
+                        Discover Us
                     </h3>
                     <ul className="space-y-2 flex flex-col items-center lg:relative lg:items-start">
-                        <li>
-                            About Us
-                        </li>
-                        <li>
-                            Events
-                        </li>
-                        <li>
-                            Membership
-                        </li>
-                        <li>
-                            Contact
-                        </li>
+                        {
+                            nav.map((item, index) => (
+                                <li key={index} className="hover:cursor-pointer">{item}</li>
+                            ))
+                        }
                     </ul>
                 </div>
                 <div>

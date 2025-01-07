@@ -12,7 +12,10 @@ export default function NavBar() {
         menu.classList.toggle('hidden');
         close.classList.toggle('hidden');
     }
-    function view(id) {document.getElementById(id).scrollIntoView({behavior: 'smooth'})}
+    function view(id) {
+        document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+        console.log(id);
+    }
     return (
         <nav className="sticky top-0 z-50 backdrop-blur-md py-6 border-b-neutral-400 border-b-2">
             <div className="container px-0 mx-auto lg:px-20 relative w-full">
