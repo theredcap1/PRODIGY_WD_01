@@ -1,8 +1,7 @@
 const elements =  [
     "Vision",
     "Team",
-    "Events",
-    "Contact",
+    "Events"
 ]
 
 export default elements;
